@@ -64,15 +64,15 @@
     background: #fafbff;
     /* transform: scale(0.9);
       transform-origin: top center; */
-      /* overflow: auto !important; */
+    /* overflow: auto !important; */
     overflow-y: auto !important;
     overflow-x: hidden !important;
   }
 
-.tableEx{
-  display: block !important;
-  overflow-x: auto !important;
-}
+  .tableEx {
+    display: block !important;
+    overflow-x: auto !important;
+  }
 
   #heading {
     font-family: "Poppins", sans-serif;
@@ -663,25 +663,249 @@ height: 100%;
 </body>
 <script>
   theme = {};
-  gempypThemes = {
+  uiPathThemes = {
     0: "rgba(2, 59, 89)",
     1: "rgba(33, 98, 132)",
     2: "rgba(73, 132, 163)",
   };
-  gemjarThemes = {
-    0: "rgba(48, 122, 100)",
-    1: "rgba(91, 170, 147)",
-    2: "rgba(143, 210, 190)",
-  };
-  var obj = {"report_product":"GEMJAR","suits_details":{"os":"Windows 10","s_run_id":"gemeco-api-jv-bdd_BETA_09c56db3-4fea-4f83-9db5-73463676e375","s_start_time":1671692572000,"s_end_time":1671692576000,"status":"FAIL","project_name":"gemeco-api-jv-bdd","user":"pdeep","env":"beta","machine":"GEMGN-220191","report_name":"GemjarTestReport","testcase_details":[{"base_user":"pdeep","invoke_user":"pdeep","tc_run_id":"test_07c96521-4e35-4529-9130-26ab8028e3eb_1671692573000","start_time":1.671692573E12,"end_time":1.671692573E12,"run_type":"ON DEMAND","run_mode":"Windows 10","name":"test","category":"GemEcoSystem","status":"FAIL","machine":"GEMGN-220191","ignore":false,"HEllo":"TEST@"},{"base_user":"pdeep","invoke_user":"pdeep","tc_run_id":"Get data of suite s-run id not present_bfb8ecf0-c6f5-4783-a24e-c6d9d6a65df5_1671692573000","start_time":1.671692573E12,"end_time":1.671692574E12,"run_type":"ON DEMAND","run_mode":"Windows 10","name":"Get data of suite s-run id not present","category":"GemEcoSystem","status":"PASS","machine":"GEMGN-220191","ignore":false},{"base_user":"pdeep","invoke_user":"pdeep","tc_run_id":"Get Token_cab7c5d8-4966-4a29-a3d8-ddd1725218b9_1671692573000","start_time":1.671692573E12,"end_time":1.671692575E12,"run_type":"ON DEMAND","run_mode":"Windows 10","name":"Get Token","category":"GemEcoSystem","status":"PASS","machine":"GEMGN-220191","ignore":false}],"testcase_info":{"FAIL":1,"PASS":2,"TOTAL":3}},"teststep_details":{"test_07c96521-4e35-4529-9130-26ab8028e3eb_1671692573000":{"steps":[{"step name":"","step description":"","status":"PASS"},{"step name":"","step description":"","status":"FAIL"}],"meta_data":[{"TESTCASE NAME":"test","SERVICE PROJECT":"NONE","DATE OF EXECUTION":{"value":1671692573000,"type":"date"}},{"EXECUTION STARTED ON":{"value":1671692573000,"type":"datetime"},"EXECUTION ENDED ON":{"value":1671692573000,"type":"datetime"},"EXECUTION DURATION":"0.0 seconds"},{"TOTAL":2,"PASS":1,"FAIL":1}]},"Get data of suite s-run id not present_bfb8ecf0-c6f5-4783-a24e-c6d9d6a65df5_1671692573000":{"steps":[{"step name":"Url of the test case","step description":"https://apis-beta.gemecosystem.com/suiteexe?s_run_id=4d767509-f3b0-4fb6-a59d-85bfc384188baaa","status":"INFO"},{"step name":"GET Request Verification ","step description":"GET Request Executed Successfully","status":"PASS"},{"step name":"Response Message","step description":"Bad Request","status":"INFO"},{"step name":"Response Body","step description":"No-Response","status":"INFO"},{"step name":"Status Verification","step description":"Expected Status :400,<br>Actual :400","status":"PASS"},{"step name":"check","step description":"check","status":"PASS"}],"meta_data":[{"TESTCASE NAME":"Get data of suite s-run id not present","SERVICE PROJECT":"NONE","DATE OF EXECUTION":{"value":1671692573000,"type":"date"}},{"EXECUTION STARTED ON":{"value":1671692573000,"type":"datetime"},"EXECUTION ENDED ON":{"value":1671692574000,"type":"datetime"},"EXECUTION DURATION":"1.0 seconds"},{"TOTAL":6,"PASS":3,"INFO":3}]},"Get Token_cab7c5d8-4966-4a29-a3d8-ddd1725218b9_1671692573000":{"steps":[{"step name":"Url for GET Request","step description":"https://apis-beta.gemecosystem.com/bridge/token","status":"INFO"},{"step name":"<b>Request: Token Authentication</b>","step description":"<b>Request Url :</b>https://apis-beta.gemecosystem.com/bridge/token<br> <b>Request Headers :</b>{null=[HTTP/1.1 200 OK], Transfer-Encoding=[chunked], expires=[0], x-envoy-upstream-service-time=[157], Server=[cloudflare], CF-RAY=[77d6fe9f6cc89978-FRA], vary=[Origin,Access-Control-Request-Method,Access-Control-Request-Headers], x-frame-options=[DENY], Connection=[keep-alive], Date=[Thu, 22 Dec 2022 07:02:55 GMT], pragma=[no-cache], CF-Cache-Status=[DYNAMIC], x-content-type-options=[nosniff], x-xss-protection=[1; mode=block], NEL=[{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}], Report-To=[{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=accpXOkr1Eu6WWYoH0dcJO%2FIa5aii2w49wZFbnovKhtHIUQEeIMjcQ3cB12VUxeBb6dGnPJX3YxmebsLX1lt2qODnHFgWQ75TxjAGRG8pe%2FA%2FI56OqKPPhu9uYGU4dIjqAw%2Fg2wwLGP9v%2BJlJQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}], cache-control=[no-cache, no-store, max-age=0, must-revalidate], alt-svc=[h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400], Content-Type=[application/json]}","status":"INFO"},{"step name":"<b>Response: Token Authentication</b>","step description":"<b>Status : </b>200<br> <b>Response Message : </b>OK<br> <b>ExecutionTime : </b>913 ms <br> <b>ResponseBody : </b>{\"data\":{\"created on\":1671688332447,\"bridgeToken\":\"5e1b8555-6e90-4caa-920b-12176ef391bd1671688332447\"},\"message\":\"Token Fetched\",\"operation\":\"Success\"}","status":"PASS"},{"step name":"GET Request Verification ","step description":"GET Request Executed Successfully","status":"PASS"},{"step name":"Response Message","step description":"OK","status":"INFO"},{"step name":"Response Body","step description":"{\"data\":{\"created on\":1671688332447,\"bridgeToken\":\"5e1b8555-6e90-4caa-920b-12176ef391bd1671688332447\"},\"message\":\"Token Fetched\",\"operation\":\"Success\"}","status":"INFO"},{"step name":"Status Verification","step description":"Expected Status :200,<br>Actual :200","status":"PASS"},{"step name":"check","step description":"check","status":"PASS"}],"meta_data":[{"TESTCASE NAME":"Get Token","SERVICE PROJECT":"NONE","DATE OF EXECUTION":{"value":1671692573000,"type":"date"}},{"EXECUTION STARTED ON":{"value":1671692573000,"type":"datetime"},"EXECUTION ENDED ON":{"value":1671692575000,"type":"datetime"},"EXECUTION DURATION":"2.0 seconds"},{"TOTAL":8,"PASS":4,"INFO":4}]}}};
+  var obj = {
+    "report_product": "UiPath Framework",
+    "suits_details": {
+      "os": "Windows 10",
+      "s_run_id": "gemeco-api-jv-bdd_BETA_09c56db3-4fea-4f83-9db5-73463676e375",
+      "s_start_time": 1671692572000,
+      "s_end_time": 1671692576000,
+      "status": "FAIL",
+      "project_name": "gemeco-api-jv-bdd",
+      "user": "pdeep",
+      "env": "beta",
+      "machine": "GEMGN-220191",
+      "report_name": "GemjarTestReport",
+      "testcase_details": [
+        {
 
+          "tc_run_id": "test_07c96521-4e35-4529-9130-26ab8028e3eb_1671692573000",
+          "start_time": 1.671692573E12,
+          "end_time": 1.671692573E12,
+          "run_type": "ON DEMAND",
+          "run_mode": "Windows 10",
+          "name": "test",
+          "category": "GemEcoSystem",
+          "status": "FAIL",
+          "machine": "GEMGN-220191",
+          "ignore": false,
+          "HEllo": "TEST@"
+        },
+        {
+
+          "tc_run_id": "Get data of suite s-run id not present_bfb8ecf0-c6f5-4783-a24e-c6d9d6a65df5_1671692573000",
+          "start_time": 1.671692573E12,
+          "end_time": 1.671692574E12,
+          "run_type": "ON DEMAND",
+          "run_mode": "Windows 10",
+          "name": "Get data of suite s-run id not present",
+          "category": "GemEcoSystem",
+          "status": "PASS",
+          "machine": "GEMGN-220191",
+          "ignore": false
+        },
+        {
+
+          "tc_run_id": "Get Token_cab7c5d8-4966-4a29-a3d8-ddd1725218b9_1671692573000",
+          "start_time": 1.671692573E12,
+          "end_time": 1.671692575E12,
+          "run_type": "ON DEMAND",
+          "run_mode": "Windows 10",
+          "name": "Get Token",
+          "category": "GemEcoSystem",
+          "status": "PASS",
+          "machine": "GEMGN-220191",
+          "ignore": false
+        }
+      ],
+      "testcase_info": {
+        "FAIL": 1,
+        "PASS": 2,
+        "TOTAL": 3
+      }
+    },
+    "teststep_details": {
+      "test_07c96521-4e35-4529-9130-26ab8028e3eb_1671692573000": {
+        "steps": [
+          {
+            "step name": "",
+            "step description": "",
+            "status": "PASS"
+          },
+          {
+            "step name": "",
+            "step description": "",
+            "status": "FAIL"
+          }
+        ],
+        "meta_data": [
+          {
+            "TESTCASE NAME": "test",
+            "SERVICE PROJECT": "NONE",
+            "DATE OF EXECUTION": {
+              "value": 1671692573000,
+              "type": "date"
+            }
+          },
+          {
+            "EXECUTION STARTED ON": {
+              "value": 1671692573000,
+              "type": "datetime"
+            },
+            "EXECUTION ENDED ON": {
+              "value": 1671692573000,
+              "type": "datetime"
+            },
+            "EXECUTION DURATION": "0.0 seconds"
+          },
+          {
+            "TOTAL": 2,
+            "PASS": 1,
+            "FAIL": 1
+          }
+        ]
+      },
+      "Get data of suite s-run id not present_bfb8ecf0-c6f5-4783-a24e-c6d9d6a65df5_1671692573000": {
+        "steps": [
+          {
+            "step name": "Url of the test case",
+            "step description": "https://apis-beta.gemecosystem.com/suiteexe?s_run_id=4d767509-f3b0-4fb6-a59d-85bfc384188baaa",
+            "status": "INFO"
+          },
+          {
+            "step name": "GET Request Verification ",
+            "step description": "GET Request Executed Successfully",
+            "status": "PASS"
+          },
+          {
+            "step name": "Response Message",
+            "step description": "Bad Request",
+            "status": "INFO"
+          },
+          {
+            "step name": "Response Body",
+            "step description": "No-Response",
+            "status": "INFO"
+          },
+          {
+            "step name": "Status Verification",
+            "step description": "Expected Status :400,<br>Actual :400",
+            "status": "PASS"
+          },
+          {
+            "step name": "check",
+            "step description": "check",
+            "status": "PASS"
+          }
+        ],
+        "meta_data": [
+          {
+            "TESTCASE NAME": "Get data of suite s-run id not present",
+            "SERVICE PROJECT": "NONE",
+            "DATE OF EXECUTION": {
+              "value": 1671692573000,
+              "type": "date"
+            }
+          },
+          {
+            "EXECUTION STARTED ON": {
+              "value": 1671692573000,
+              "type": "datetime"
+            },
+            "EXECUTION ENDED ON": {
+              "value": 1671692574000,
+              "type": "datetime"
+            },
+            "EXECUTION DURATION": "1.0 seconds"
+          },
+          {
+            "TOTAL": 6,
+            "PASS": 3,
+            "INFO": 3
+          }
+        ]
+      },
+      "Get Token_cab7c5d8-4966-4a29-a3d8-ddd1725218b9_1671692573000": {
+        "steps": [
+          {
+            "step name": "Url for GET Request",
+            "step description": "https://apis-beta.gemecosystem.com/bridge/token",
+            "status": "INFO"
+          },
+          {
+            "step name": "<b>Request: Token Authentication</b>",
+            "step description": "<b>Request Url :</b>https://apis-beta.gemecosystem.com/bridge/token<br> <b>Request Headers :</b>{null=[HTTP/1.1 200 OK], Transfer-Encoding=[chunked], expires=[0], x-envoy-upstream-service-time=[157], Server=[cloudflare], CF-RAY=[77d6fe9f6cc89978-FRA], vary=[Origin,Access-Control-Request-Method,Access-Control-Request-Headers], x-frame-options=[DENY], Connection=[keep-alive], Date=[Thu, 22 Dec 2022 07:02:55 GMT], pragma=[no-cache], CF-Cache-Status=[DYNAMIC], x-content-type-options=[nosniff], x-xss-protection=[1; mode=block], NEL=[{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}], Report-To=[{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=accpXOkr1Eu6WWYoH0dcJO%2FIa5aii2w49wZFbnovKhtHIUQEeIMjcQ3cB12VUxeBb6dGnPJX3YxmebsLX1lt2qODnHFgWQ75TxjAGRG8pe%2FA%2FI56OqKPPhu9uYGU4dIjqAw%2Fg2wwLGP9v%2BJlJQ%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}], cache-control=[no-cache, no-store, max-age=0, must-revalidate], alt-svc=[h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400], Content-Type=[application/json]}",
+            "status": "INFO"
+          },
+          {
+            "step name": "<b>Response: Token Authentication</b>",
+            "step description": "<b>Status : </b>200<br> <b>Response Message : </b>OK<br> <b>ExecutionTime : </b>913 ms <br> <b>ResponseBody : </b>{\"data\":{\"created on\":1671688332447,\"bridgeToken\":\"5e1b8555-6e90-4caa-920b-12176ef391bd1671688332447\"},\"message\":\"Token Fetched\",\"operation\":\"Success\"}",
+            "status": "PASS"
+          },
+          {
+            "step name": "GET Request Verification ",
+            "step description": "GET Request Executed Successfully",
+            "status": "PASS"
+          },
+          {
+            "step name": "Response Message",
+            "step description": "OK",
+            "status": "INFO"
+          },
+          {
+            "step name": "Response Body",
+            "step description": "{\"data\":{\"created on\":1671688332447,\"bridgeToken\":\"5e1b8555-6e90-4caa-920b-12176ef391bd1671688332447\"},\"message\":\"Token Fetched\",\"operation\":\"Success\"}",
+            "status": "INFO"
+          },
+          {
+            "step name": "Status Verification",
+            "step description": "Expected Status :200,<br>Actual :200",
+            "status": "PASS"
+          },
+          {
+            "step name": "check",
+            "step description": "check",
+            "status": "PASS"
+          }
+        ],
+        "meta_data": [
+          {
+            "TESTCASE NAME": "Get Token",
+            "SERVICE PROJECT": "NONE",
+            "DATE OF EXECUTION": {
+              "value": 1671692573000,
+              "type": "date"
+            }
+          },
+          {
+            "EXECUTION STARTED ON": {
+              "value": 1671692573000,
+              "type": "datetime"
+            },
+            "EXECUTION ENDED ON": {
+              "value": 1671692575000,
+              "type": "datetime"
+            },
+            "EXECUTION DURATION": "2.0 seconds"
+          },
+          {
+            "TOTAL": 8,
+            "PASS": 4,
+            "INFO": 4
+          }
+        ]
+      }
+    }
+  };
   // console.log(stepobj);
   console.log(obj);
-  if (obj.report_product === "GEMPYP") {
-    theme = gempypThemes;
-  } else if (obj.report_product === "GEMJAR") {
-    theme = gemjarThemes;
-  } else {
+  if (obj.report_product === "UiPath Framework") {
+    theme = uiPathThemes;
   }
   obj.suits_details.testcase_details = changeFormat(
     obj.suits_details.testcase_details
@@ -709,7 +933,6 @@ height: 100%;
     "EXECUTED BY": "user",
     "EXECUTED ON": "machine",
     "RUN TYPE": "run_type",
-    "RUN MODE": "run_mode",
   };
   var options = getOptions(obj.suits_details.testcase_details);
   for (var i = 0; i < options.length; i++) {
@@ -731,8 +954,7 @@ height: 100%;
         if (!(key.includes('_run_id') || key.includes('_RUN_ID')) && key.includes('_')) {
           newobj[key.replace('_', " ").toUpperCase()] = value[j][key];
         }
-        else 
-        {
+        else {
           newobj[key.toUpperCase()] = value[j][key];
         }
         i++;
@@ -743,15 +965,13 @@ height: 100%;
     for (var i = 0; i < value.length; i++) {
       var keys = Object.keys(value[i]);
       for (var j = 0; j < keys.length; j++) {
-        if (typeof value[i][keys[j]] != "object") 
-        {
-            value[i][keys[j]] = {
+        if (typeof value[i][keys[j]] != "object") {
+          value[i][keys[j]] = {
             value: value[i][keys[j]],
             sortValue: value[i][keys[j]],
           };
         }
-        else if(value[i][keys[j]] === null || value[i][keys[j]] === "None")
-        {
+        else if (value[i][keys[j]] === null || value[i][keys[j]] === "None") {
           // console.log(value[i][keys[j]] , "..." , keys[j]);
           value[i][keys[j]] = {
             value: "None",
@@ -764,7 +984,7 @@ height: 100%;
   }
   function constructPage() {
 
-    var infraTable = getInfraDetailsTable(obj.suits_details,obj.suits_details.testcase_details);
+    var infraTable = getInfraDetailsTable(obj.suits_details, obj.suits_details.testcase_details);
     $("#pills-overview").append(infraTable);
     var cardDetailsOverview = getCardDetails(obj.suits_details.testcase_info, 'overview');
     var cardDetailsTestcase = getCardDetails(obj.suits_details.testcase_info, 'testcase');
@@ -822,7 +1042,7 @@ height: 100%;
       cols.push("DURATION");
     }
 
-    if (!cols.includes('S.No.') || !cols.includes("S.NO."))  {
+    if (!cols.includes('S.No.') || !cols.includes("S.NO.")) {
       cols.unshift("S.NO.");
     }
 
@@ -841,18 +1061,15 @@ height: 100%;
       theader.style.backgroundColor =
         theme[2].substring(0, theme[2].length - 1) + ", 0.1)";
       theader.innerHTML = cols[i];
-      if((cols[i].includes('START TIME')) || (cols[i].includes('END TIME')) || (cols[i].includes('LOG')))
-      {
+      if ((cols[i].includes('START TIME')) || (cols[i].includes('END TIME')) || (cols[i].includes('LOG'))) {
         theader.style.minWidth = "120px";
       }
-      if(cols[i].includes(' '))
-      {
+      if (cols[i].includes(' ')) {
         const col_id = cols[i].split(' ')
         theader.id = col_id[0] + '_' + col_id[1] + "_tc";
       }
-      else
-      {
-      theader.id = cols[i] + "_tc";
+      else {
+        theader.id = cols[i] + "_tc";
       }
 
       theader.addEventListener("click", getsort, true);
@@ -865,9 +1082,9 @@ height: 100%;
       // Create a new row
       if (list[i]["IGNORE"] !== true) {
         trow = table.insertRow(-1);
-        trow.setAttribute("data-toggle", "collapse");
+        // trow.setAttribute("data-toggle", "collapse");
         trow.setAttribute("data-target", "#accord" + i);
-        trow.className = "checkCollapse";
+        // trow.className = "checkCollapse";
         trow.style.background = "white";
         for (var j = 0; j < cols.length; j++) {
           var cell = trow.insertCell(-1);
@@ -923,8 +1140,7 @@ height: 100%;
             }
             else {
               var link = document.createElement("a");
-              if(list[i][cols[j]]["value"])
-              {
+              if (list[i][cols[j]]["value"]) {
                 link.href = list[i][cols[j]]["value"];
               }
               else {
@@ -953,40 +1169,6 @@ height: 100%;
           }
         }
       }
-      trowAccor = table.insertRow(-1);
-      tcellAccord = trowAccor.insertCell(-1);
-      tcellAccord.className = "hiddenRow";
-      tcellAccord.setAttribute("colspan", cols.length);
-
-
-
-
-      var accordDiv = document.createElement("div");
-      accordDiv.className = "accordion-body collapse";
-      accordDiv.id = "accord" + i;
-      accordDiv.setAttribute("data-parent", "#tab");
-      var accordHeading = $("<div/>")
-        .html("Test Step Report")
-        .addClass("mb-2 accordHeading mt-4 text-center")
-        .css("color", theme[0]);
-      accordDiv.append(accordHeading[0]);
-      var stepCard = createAccordionCards(
-        obj.teststep_details[list[i]["TC_RUN_ID"]["value"]].meta_data[2],
-        i
-      );
-      stepCard.addClass("mt-4");
-      accordDiv.append(stepCard[0]);
-      var stepDetails = createAccordionMetaDetails(
-        obj.teststep_details[list[i]["TC_RUN_ID"]["value"]].meta_data
-      );
-      accordDiv.append(stepDetails[0]);
-      var tableAccord = createAccordionTable(
-        obj.teststep_details[list[i]["TC_RUN_ID"]["value"]].steps,
-        i
-      );
-      accordDiv.append(tableAccord[0]);
-      // tcellAccord.append(imgmodaldiv);
-      tcellAccord.append(accordDiv);
     }
 
     div.append(table);
@@ -1165,7 +1347,7 @@ height: 100%;
       )
       .css("box-shadow", " 0px 3px 6px rgba(0, 71, 136, 0.05)")
       .css("border-radius", "4px")
-      .css("border","1px solid white");
+      .css("border", "1px solid white");
     var cols = Headers(exeHeaders);
     var headers = $("<tr>");
     var content = $("<tr/>");
@@ -1278,11 +1460,10 @@ height: 100%;
     return div;
   }
 
-  function getInfraDetailsTable(data,tcData) {
+  function getInfraDetailsTable(data, tcData) {
     var run_mode = new Set();
     var run_type = new Set();
-    for(var i=0 ; i<tcData.length; i++)
-    {
+    for (var i = 0; i < tcData.length; i++) {
       run_mode.add(tcData[i]["RUN MODE"]["value"])
       run_type.add(tcData[i]["RUN TYPE"]["value"])
     }
@@ -1292,7 +1473,7 @@ height: 100%;
       .css("box-shadow", "0px 3px 6px rgba(0, 0, 0, 0.05)")
       .css("border-radius", "6px")
       .css("display", "block")
-      .css("border","1px solid white")
+      .css("border", "1px solid white")
       .hover(
         function () {
           var col = "1px solid " + theme[0];
@@ -1325,17 +1506,14 @@ height: 100%;
     for (var colIndex = 0; colIndex < cols.length; colIndex++) {
       var val = data[infraHeaders[cols[colIndex]]];
       if (val === undefined) {
-        if(infraHeaders[cols[colIndex]] === 'run_type')
-        {
+        if (infraHeaders[cols[colIndex]] === 'run_type') {
           val = Array.from(run_type).toString();
         }
-        else if(infraHeaders[cols[colIndex]] === 'run_mode')
-        {
+        else if (infraHeaders[cols[colIndex]] === 'run_mode') {
           val = Array.from(run_mode).toString();
         }
-        else
-        {
-        val = "None";
+        else {
+          val = "None";
         }
       }
       content.append($("<td/>").html(val));
@@ -1633,7 +1811,7 @@ height: 100%;
     return Array.from(options);
   }
 
- 
+
 
   function getsort(val) {
     if (
@@ -1658,17 +1836,14 @@ height: 100%;
       if (sortType === "asc") {
         for (var i = 0; i < tab.length; i++) {
           for (var j = i + 1; j < tab.length; j++) {
-            if(val.target.innerText !== 'S.NO.')
-            {
-            if(tab[i][val.target.innerText] === undefined)
-              {
+            if (val.target.innerText !== 'S.NO.') {
+              if (tab[i][val.target.innerText] === undefined) {
                 tab[i][val.target.innerText] = {
                   value: "None",
-                sortValue: "",
+                  sortValue: "",
                 };
               }
-              if(tab[j][val.target.innerText] === undefined)
-              {
+              if (tab[j][val.target.innerText] === undefined) {
                 tab[j][val.target.innerText] = {
                   value: "None",
                   sortValue: "",
@@ -1688,18 +1863,15 @@ height: 100%;
       } else {
         for (var i = 0; i < tab.length; i++) {
           for (var j = i + 1; j < tab.length; j++) {
-            if(val.target.innerText !== 'S.NO.')
-            {
+            if (val.target.innerText !== 'S.NO.') {
 
-            if(tab[i][val.target.innerText] === undefined)
-              {
+              if (tab[i][val.target.innerText] === undefined) {
                 tab[i][val.target.innerText] = {
                   value: "None",
-                sortValue: "",
+                  sortValue: "",
                 };
               }
-              if(tab[j][val.target.innerText] === undefined)
-              {
+              if (tab[j][val.target.innerText] === undefined) {
                 tab[j][val.target.innerText] = {
                   value: "None",
                   sortValue: "",
@@ -1730,24 +1902,22 @@ height: 100%;
         icon.addClass("fa-angle-down ml-1").css("vertical-align", "middle");
       }
       icon.attr("id", lastsortHeader);
-      if(lastsortHeader.includes(' '))
-      {
+      if (lastsortHeader.includes(' ')) {
         const arrid = lastsortHeader.split(' ');
         var targetId = "#" + arrid[0] + "_" + arrid[1] + "_tc";
         $(targetId).append(icon);
 
       }
-      else
-      {
-      // icon.addEventListener("click",(e)=>{
-      // e.stopPropagation();
-      // });
-      var targetId = "#" + lastsortHeader + "_tc";
-      $(targetId).append(icon);
+      else {
+        // icon.addEventListener("click",(e)=>{
+        // e.stopPropagation();
+        // });
+        var targetId = "#" + lastsortHeader + "_tc";
+        $(targetId).append(icon);
       }
 
       var $filterableRows = $("#tab").find("tbody").find("tr").not(":first");
-    } 
+    }
 
 
     else {
@@ -1765,29 +1935,26 @@ height: 100%;
         sortType = "asc";
         lastsortHeader = val.target.innerText;
       }
-      var tab = [...obj.suits_details.testcase_details];  
+      var tab = [...obj.suits_details.testcase_details];
       tab = changeFormat(tab);
       if (sortType === "asc") {
         // console.log(tab);
         for (var i = 0; i < tab.length; i++) {
           for (var j = i + 1; j < tab.length; j++) {
-            if(val.target.innerText !== 'S.NO.')
-            {
-            if(tab[i][val.target.innerText] === undefined)
-              {
+            if (val.target.innerText !== 'S.NO.') {
+              if (tab[i][val.target.innerText] === undefined) {
                 tab[i][val.target.innerText] = {
                   value: "None",
-                sortValue: "",
+                  sortValue: "",
                 };
               }
-              if(tab[j][val.target.innerText] === undefined)
-              {
+              if (tab[j][val.target.innerText] === undefined) {
                 tab[j][val.target.innerText] = {
                   value: "None",
                   sortValue: "",
                 };
-            } 
-          }
+              }
+            }
             if (
               tab[i][val.target.innerText]["sortValue"] >
               tab[j][val.target.innerText]["sortValue"]
@@ -1801,23 +1968,20 @@ height: 100%;
       } else {
         for (var i = 0; i < tab.length; i++) {
           for (var j = i + 1; j < tab.length; j++) {
-            if(val.target.innerText !== 'S.NO.')
-            {
-            if(tab[i][val.target.innerText] === undefined)
-              {
+            if (val.target.innerText !== 'S.NO.') {
+              if (tab[i][val.target.innerText] === undefined) {
                 tab[i][val.target.innerText] = {
                   value: "None",
-                sortValue: "",
+                  sortValue: "",
                 };
               }
-              if(tab[j][val.target.innerText] === undefined)
-              {
+              if (tab[j][val.target.innerText] === undefined) {
                 tab[j][val.target.innerText] = {
                   value: "None",
                   sortValue: "",
                 };
-            } 
-          }
+              }
+            }
             if (
               tab[i][val.target.innerText]["sortValue"] <
               tab[j][val.target.innerText]["sortValue"]
@@ -1844,20 +2008,18 @@ height: 100%;
       }
 
       icon.attr("id", lastsortHeader);
-      if(lastsortHeader.includes(' '))
-      {
+      if (lastsortHeader.includes(' ')) {
         const arrid = lastsortHeader.split(' ');
         var targetId = "#" + arrid[0] + "_" + arrid[1] + "_tc";
         $(targetId).append(icon);
 
       }
-      else
-      {
-      // icon.addEventListener("click",(e)=>{
-      // e.stopPropagation();
-      // });
-      var targetId = "#" + lastsortHeader + "_tc";
-      $(targetId).append(icon);
+      else {
+        // icon.addEventListener("click",(e)=>{
+        // e.stopPropagation();
+        // });
+        var targetId = "#" + lastsortHeader + "_tc";
+        $(targetId).append(icon);
       }
 
       var $filterableRows = $("#tab").find("tbody").find("tr").not(":first");
